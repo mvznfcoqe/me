@@ -1,0 +1,217 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+  \textbf{\Huge \scshape Москаленко Дмитрий} \\ \vspace{1pt}
+  \href{mailto:frkam@icloud.com}{\underline{frkam@icloud.com}} $|$
+  \href{https://t.me/frkam}{\underline{t.me/frkam}} $|$
+  \href{https://github.com/frkam}{\underline{github.com/frkam}}
+\end{center}
+
+%----------SUMMARY----------
+\section{Обо мне}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{Frontend разработчик с 1 годом опыта разработки веб-приложений используя Javascript и React. Я заинтересован в разработке доступных и удобных сайтов и веб-приложений.  } \
+  }
+\end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Опыт работы}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{\href{https://sporterala.com}{\underline{Sporterala}}}{Авг. 2023 -- Сент. 2023}
+{Frontend разработчик}{Удаленно, Россия}
+\resumeItemListStart
+\resumeItem{Реализовывал локализацию сайта на Русский, Английский и Арабский язык}
+\resumeItem{Разрабатывал UI-kit}
+\resumeItem{Проектировал API приложения}
+\resumeItem{Разрабатывал animate-on-scroll анимации}
+\resumeItem{Реализовывал серверную фильтрацию услуг и товаров}
+\resumeItem{Реализовывал масштабную турнирную сетку}
+\resumeItemListEnd
+
+\resumeSubheading
+{Самозанятый}{2022 -- 2023}
+{Frontend разработчик}{Удаленно, Россия}
+\resumeItemListStart
+\resumeItem{Разрабатывал Frontend приложения используя React, Typescript}
+\resumeItem{Реализовывал сбор метрик по взаимодействию пользователей с сайтом}
+\resumeItem{Занимался развертыванием приложений на VPS}
+\resumeItem{Разрабатывал Backend используя Node, Express }
+\resumeItem{Занимался версткой сайтов}
+\resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Проекты}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\href{https://github.com/youtogether-online}{\underline{YouTogether}} $|$ \emph{React, Effector, Feature-Sliced Design, Storybook, Docker, Github Actions}}{2023 -- Настоящее время}
+\resumeItemListStart
+\resumeItem{Разрабатывал UI-kit и создал документацию используя Storybook}
+\resumeItem{Тесно сотрудничал с Backend разработчиком для удовлетворения требований к работе приложения}
+\resumeItem{Проектировал API приложения}
+\resumeItem{Реализовывал локализацию сайта на Русский и Английский язык}
+\resumeItem{Реализовывал CI/CD используя Github Actions и Docker}
+\resumeItemListEnd
+\resumeProjectHeading
+{\href{https://github.com/frkam/url-shortener}{\underline{UrlShortener}} $|$ \emph{React, Redux, Feature-Sliced Design, Socket.io, Graphql}}{Июль 2022}
+\resumeItemListStart
+\resumeItem{Реализовывал обновление данных в режиме реального времени при помощи WebSocket}
+\resumeItem{Разрабатывал обработку ошибок на уровне клиента}
+\resumeItem{Реализовывал работу с backend на Graphql}
+\resumeItemListEnd
+\resumeProjectHeading
+{\href{https://github.com/frkam/ecommerce-app}{\underline{Hekto}} $|$ \emph{React, Redux, Firebase}}{Май 2022 -- Июнь 2022}
+\resumeItemListStart
+\resumeItem{Реализовывал аутентификацию с помощью Firebase Authentication}
+\resumeItem{Разрабатывал валидацию формы для сбора сообщений}
+\resumeItem{Интегрировал Firebase Firestore в проект для хранения корзины пользователя}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Образование}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Воронежский Государственный Технический Университет}{Воронеж}
+{Информационные системы и программирование}{2021 -- 2025}
+\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Технические навыки}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+                \textbf{Языки}{: JavaScript, TypeScript, HTML, CSS} \\
+                \textbf{Фреймворки и библиотеки}{: React, Node.js, Redux, Effector, i18next, Tailwind, Astro } \\
+                \textbf{Инструменты разработчика}{: Git, Docker, Github Actions, Linux} \\
+          }}
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
